@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html class="js">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Яндекс дом</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <a class="logo" href="#"></a>
+            <a href="#" class="m-menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <nav class="visible-lg">
+                <ul class="menu ">
+                    <li><a href="#" class="active">Сводка</a></li>
+                    <li><a href="#">Устройства</a></li>
+                    <li><a href="#">Сценарии</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <hr>
+    </div>
+    <main id="main">
+        <div class="greetings">
+            <h1>Главное</h1>
+            <div class="maininfo">
+                <div class="welcome">
+                    <h3>Привет, Геннадий!</h3>
+                    <p>Двери и окна закрыты, cигнализация включена.</p>
+
+                    <ul class="weather">
+                        <li class="place">Дома</li>
+                        <li class="place">За окном</li>
+                    </ul>
+
+                    <div class="values">
+                        <p>+23</p>
+                        <p>+19</p>
+                        <img src="./assets/cloud-drizzle.svg" alt="" />
+                    </div>
+                </div>
+                <div id="scrollBottom" class="devices dragscroll">
+                    <div class="device">
+                        <div>
+                            <svg class="temp_power_off" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                    stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                            </svg>
+                        </div>
+
+                        <div class="caption">
+                            <h4>Philips Cooler</h4>
+                            <p>Начнет охлаждать в 16:30</p>
+                        </div>
+
+                    </div>
+                    <div class="device bulb">
+                        <div>
+                            <svg width="50" height="50" class="bulb_power_off" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <circle id="Oval" stroke-opacity="0.7" cx="11" cy="11" r="5" fill="none"></circle>
+                                <path d="M11,0 L11,2" stroke-opacity="0.3"></path>
+                                <path d="M11,20 L11,22" stroke-opacity="0.3"></path>
+                                <path d="M3.22,3.22 L4.64,4.64" stroke-opacity="0.3"></path>
+                                <path d="M17.36,17.36 L18.78,18.78" stroke-opacity="0.3"></path>
+                                <path d="M0,11 L2,11" stroke-opacity="0.3"></path>
+                                <path d="M20,11 L22,11" stroke-opacity="0.3"></path>
+                                <path d="M3.22,18.78 L4.64,17.36" stroke-opacity="0.3"></path>
+                                <path d="M17.36,4.64 L18.78,3.22" stroke-opacity="0.3"></path>
+                            </svg>
+                        </div>
+
+                        <div class="caption">
+                            <h4>Xiaomi Yeelight LED Smart Bulb</h4>
+                            <p>Включится в 17:00</p>
+                        </div>
+
+                    </div>
+                    <div class="device thermo">
+                        <div>
+                            <svg class="temp_power_off" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                    stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                            </svg>
+                        </div>
+
+                        <div class="caption">
+                            <h4>Elgato Eve Degree Connected</h4>
+                            <p>Выключено до 17:00</p>
+                        </div>
+
+                    </div>
+
+                    <div class="device floor">
+                        <div>
+                            <svg class="temp_power_on" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                    stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                            </svg>
+                        </div>
+
+                        <div class="caption">
+                            <h4>Xiaomi Warm Floor</h4>
+                            <p>Включено</p>
+                        </div>
+
+                    </div>
+                </div>
+                <svg id="scrollBottomBtn" class="double-arrow" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8,1 C8.4120206,1 8.67869581,1.16820615 9.01804372,1.50755406 L14.7437184,7.23322877 C15.0854272,7.57493753 15.0854272,8.12895688 14.7437184,8.47066564 C14.4020097,8.8123744 13.8479903,8.8123744 13.5062816,8.47066564 L8,2.96438407 L2.49371843,8.47066564 C2.15200968,8.8123744 1.59799032,8.8123744 1.25628157,8.47066564 C0.914572811,8.12895688 0.914572811,7.57493753 1.25628157,7.23322877 L7.00240491,1.48710543 C7.33493661,1.15457373 7.5879794,1 8,1 Z M8,7 C8.4120206,7 8.67869581,7.16820615 9.01804372,7.50755406 L14.7437184,13.2332288 C15.0854272,13.5749375 15.0854272,14.1289569 14.7437184,14.4706656 C14.4020097,14.8123744 13.8479903,14.8123744 13.5062816,14.4706656 L8,8.96438407 L2.49371843,14.4706656 C2.15200968,14.8123744 1.59799032,14.8123744 1.25628157,14.4706656 C0.914572811,14.1289569 0.914572811,13.5749375 1.25628157,13.2332288 L7.00240491,7.48710543 C7.33493661,7.15457373 7.5879794,7 8,7 Z"
+                        id="path-1" />
+                </svg>
+            </div>
+        </div>
+
+        <div id="fvScenarios" class="faivorites">
+            <div class="heading">
+                <h2>Избранные сценарии</h2>
+                <div class="pagination-buttons">
+                    <button id="paginationScenariosLeft" class="pagination" type="button">
+                        <svg class="pagination-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+                            <path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg>
+                    </button>
+                    <button id="paginationScenariosRight" class="pagination" type="button">
+                        <svg class="pagination-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+                            <path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" /></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="fvScenariosContents" class="scenario-list">
+                <div class="page">
+                    <div class="scenario">
+
+                        <svg width="50" height="50" class="bulb_power_on" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <circle id="Oval" stroke-opacity="0.7" cx="11" cy="11" r="5" fill="none"></circle>
+                            <path d="M11,0 L11,2" stroke-opacity="0.3"></path>
+                            <path d="M11,20 L11,22" stroke-opacity="0.3"></path>
+                            <path d="M3.22,3.22 L4.64,4.64" stroke-opacity="0.3"></path>
+                            <path d="M17.36,17.36 L18.78,18.78" stroke-opacity="0.3"></path>
+                            <path d="M0,11 L2,11" stroke-opacity="0.3"></path>
+                            <path d="M20,11 L22,11" stroke-opacity="0.3"></path>
+                            <path d="M3.22,18.78 L4.64,17.36" stroke-opacity="0.3"></path>
+                            <path d="M17.36,4.64 L18.78,3.22" stroke-opacity="0.3"></path>
+                        </svg>
+
+                        <p>Выключить весь свет в доме и во дворе</p>
+                    </div>
+
+                    <div class="scenario">
+
+                        <svg fill="none" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#000000"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <circle id="Oval" cx="11" cy="11" r="10"></circle>
+                            <polyline id="Shape" opacity="0.3" points="10 4 10 10 13 13"></polyline>
+                        </svg>
+
+                        <p>Я ухожу</p>
+                    </div>
+                    <div class="scenario">
+
+                        <svg width="50" height="50" class="bulb_power_on" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <circle id="Oval" stroke-opacity="0.7" cx="11" cy="11" r="5" fill="none"></circle>
+                            <path d="M11,0 L11,2" stroke-opacity="0.3"></path>
+                            <path d="M11,20 L11,22" stroke-opacity="0.3"></path>
+                            <path d="M3.22,3.22 L4.64,4.64" stroke-opacity="0.3"></path>
+                            <path d="M17.36,17.36 L18.78,18.78" stroke-opacity="0.3"></path>
+                            <path d="M0,11 L2,11" stroke-opacity="0.3"></path>
+                            <path d="M20,11 L22,11" stroke-opacity="0.3"></path>
+                            <path d="M3.22,18.78 L4.64,17.36" stroke-opacity="0.3"></path>
+                            <path d="M17.36,4.64 L18.78,3.22" stroke-opacity="0.3"></path>
+                        </svg>
+
+                        <p>Включить свет в коридоре</p>
+                    </div>
+                    <div class="scenario">
+
+                        <svg class="temp_power_on" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                        </svg>
+
+                        <div class="caption">
+                            <h4>Набрать горячую ванну</h4>
+                            <p>Начнётся в 18:00</p>
+                        </div>
+
+                    </div>
+                    <div class="scenario">
+
+                        <svg class="temp_power_on" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                        </svg>
+
+                        <p>Сделать пол тёплым во всей квартире</p>
+                    </div>
+
+                    <div class="scenario">
+
+                        <svg class="temp_power_on" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                        </svg>
+
+                        <p>Сделать пол тёплым во всей квартире</p>
+                    </div>
+                    <div class="scenario">
+
+                        <svg class="temp_power_on" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                        </svg>
+
+                        <p>Сделать пол тёплым во всей квартире</p>
+                    </div>
+                    <div class="scenario">
+
+                        <svg class="temp_power_on" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                        </svg>
+
+                        <p>Сделать пол тёплым во всей квартире</p>
+                    </div>
+                    <div class="scenario">
+
+                        <svg class="temp_power_on" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                        </svg>
+
+                        <p>Сделать пол тёплым во всей квартире</p>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="scenario">
+
+                        <svg width="50" height="50" class="bulb_power_on" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <circle id="Oval" stroke-opacity="0.7" cx="11" cy="11" r="5" fill="none"></circle>
+                            <path d="M11,0 L11,2" stroke-opacity="0.3"></path>
+                            <path d="M11,20 L11,22" stroke-opacity="0.3"></path>
+                            <path d="M3.22,3.22 L4.64,4.64" stroke-opacity="0.3"></path>
+                            <path d="M17.36,17.36 L18.78,18.78" stroke-opacity="0.3"></path>
+                            <path d="M0,11 L2,11" stroke-opacity="0.3"></path>
+                            <path d="M20,11 L22,11" stroke-opacity="0.3"></path>
+                            <path d="M3.22,18.78 L4.64,17.36" stroke-opacity="0.3"></path>
+                            <path d="M17.36,4.64 L18.78,3.22" stroke-opacity="0.3"></path>
+                        </svg>
+
+                        <p>Выключить весь свет в доме и во дворе</p>
+                    </div>
+
+                    <div class="scenario">
+
+                        <svg fill="none" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#000000"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <circle id="Oval" cx="11" cy="11" r="10"></circle>
+                            <polyline id="Shape" opacity="0.3" points="10 4 10 10 13 13"></polyline>
+                        </svg>
+
+                        <p>Я ухожу</p>
+                    </div>
+                    <div class="scenario">
+
+                        <svg width="50" height="50" class="bulb_power_on" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <circle id="Oval" stroke-opacity="0.7" cx="11" cy="11" r="5" fill="none"></circle>
+                            <path d="M11,0 L11,2" stroke-opacity="0.3"></path>
+                            <path d="M11,20 L11,22" stroke-opacity="0.3"></path>
+                            <path d="M3.22,3.22 L4.64,4.64" stroke-opacity="0.3"></path>
+                            <path d="M17.36,17.36 L18.78,18.78" stroke-opacity="0.3"></path>
+                            <path d="M0,11 L2,11" stroke-opacity="0.3"></path>
+                            <path d="M20,11 L22,11" stroke-opacity="0.3"></path>
+                            <path d="M3.22,18.78 L4.64,17.36" stroke-opacity="0.3"></path>
+                            <path d="M17.36,4.64 L18.78,3.22" stroke-opacity="0.3"></path>
+                        </svg>
+
+                        <p>Включить свет в коридоре</p>
+                    </div>
+                    <div class="scenario">
+
+                        <svg class="temp_power_on" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                        </svg>
+
+                        <div class="caption">
+                            <h4>Набрать горячую ванну</h4>
+                            <p>Начнётся в 18:00</p>
+                        </div>
+
+                    </div>
+                    <div class="scenario">
+
+                        <svg class="temp_power_on" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                        </svg>
+
+                        <p>Сделать пол тёплым во всей квартире</p>
+                    </div>
+
+                    <div class="scenario">
+
+                        <svg class="temp_power_on" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                        </svg>
+
+                        <p>Сделать пол тёплым во всей квартире</p>
+                    </div>
+                    <div class="scenario">
+
+                        <svg class="temp_power_on" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                        </svg>
+
+                        <p>Сделать пол тёплым во всей квартире</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fvDevices" class="faivorite-devices">
+
+            <div class="heading">
+                <h2>Избранные устройства</h2>
+                <div class="select-container">
+                    <div class="select-side">
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                    <select name="room select" id="select" class="m-select">
+                        <option value="1">Все</option>
+                        <option value="2">Кухня</option>
+                        <option value="3">Зал</option>
+                        <option value="4">Лампочки</option>
+                        <option value="5">Камеры</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button class="room-button on">Все</button>
+                    <button class="room-button">Кухня</button>
+                    <button class="room-button">Зал</button>
+                    <button class="room-button">Лампочки</button>
+                    <button class="room-button">Камеры</button>
+                </div>
+                <div class="pagination-buttons">
+                    <button id="paginationLeft" class="pagination" type="button">
+                        <svg class="pagination-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+                            <path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg>
+                    </button>
+                    <button id="paginationRight" class="pagination" type="button">
+                        <svg class="pagination-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+                            <path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" /></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="fvDevicesContents" class="devices dragscroll">
+                <div class="device bulb">
+                    <svg width="50" height="50" class="bulb_power_on" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <circle id="Oval" stroke-opacity="0.7" cx="11" cy="11" r="5" fill="none"></circle>
+                        <path d="M11,0 L11,2" stroke-opacity="0.3"></path>
+                        <path d="M11,20 L11,22" stroke-opacity="0.3"></path>
+                        <path d="M3.22,3.22 L4.64,4.64" stroke-opacity="0.3"></path>
+                        <path d="M17.36,17.36 L18.78,18.78" stroke-opacity="0.3"></path>
+                        <path d="M0,11 L2,11" stroke-opacity="0.3"></path>
+                        <path d="M20,11 L22,11" stroke-opacity="0.3"></path>
+                        <path d="M3.22,18.78 L4.64,17.36" stroke-opacity="0.3"></path>
+                        <path d="M17.36,4.64 L18.78,3.22" stroke-opacity="0.3"></path>
+                    </svg>
+
+
+                    <div class="caption">
+                        <h4>Xiaomi Yeelight LED Smart Bulb</h4>
+                        <p>Включено</p>
+                    </div>
+                </div>
+                <div class="device">
+                    <svg width="50" height="50" class="bulb_power_off" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <circle id="Oval" stroke-opacity="0.7" cx="11" cy="11" r="5" fill="none"></circle>
+                        <path d="M11,0 L11,2" stroke-opacity="0.3"></path>
+                        <path d="M11,20 L11,22" stroke-opacity="0.3"></path>
+                        <path d="M3.22,3.22 L4.64,4.64" stroke-opacity="0.3"></path>
+                        <path d="M17.36,17.36 L18.78,18.78" stroke-opacity="0.3"></path>
+                        <path d="M0,11 L2,11" stroke-opacity="0.3"></path>
+                        <path d="M20,11 L22,11" stroke-opacity="0.3"></path>
+                        <path d="M3.22,18.78 L4.64,17.36" stroke-opacity="0.3"></path>
+                        <path d="M17.36,4.64 L18.78,3.22" stroke-opacity="0.3"></path>
+                    </svg>
+
+                    <div class="caption">
+                        <h4>D-Link Omna 180 Cam</h4>
+                        <p>Включится в 17:00</p>
+                    </div>
+
+                </div>
+                <div class="device thermo">
+                    <div>
+                        <svg class="temp_power_off" width="24px" height="24px" viewBox="0 0 24 24" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.0003489,14.76 L14.0003489,3.5 C14.0003489,2.11928813 12.8810608,1 11.5003489,1 C10.119637,1 9.00034891,2.11928813 9.00034891,3.5 L9.00034891,14.76 C7.35223452,15.8611927 6.61873572,17.911099 7.19410587,19.8079004 C7.76947602,21.7047019 9.51820196,23.0016574 11.5003489,23.0016574 C13.4824959,23.0016574 15.2312218,21.7047019 15.806592,19.8079004 C16.3819621,17.911099 15.6484633,15.8611927 14.0003489,14.76 Z"
+                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle id="Oval-2" fill-opacity="0.2" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"></circle>
+                        </svg>
+                    </div>
+
+                    <div class="caption">
+                        <h4>Elgato Eve Degree Connected</h4>
+                        <p>Выключено до 17:00</p>
+                    </div>
+
+                </div>
+                <div class="device">
+                    <svg width="50" height="50" class="bulb_power_off" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <circle id="Oval" stroke-opacity="0.7" cx="11" cy="11" r="5" fill="none"></circle>
+                        <path d="M11,0 L11,2" stroke-opacity="0.3"></path>
+                        <path d="M11,20 L11,22" stroke-opacity="0.3"></path>
+                        <path d="M3.22,3.22 L4.64,4.64" stroke-opacity="0.3"></path>
+                        <path d="M17.36,17.36 L18.78,18.78" stroke-opacity="0.3"></path>
+                        <path d="M0,11 L2,11" stroke-opacity="0.3"></path>
+                        <path d="M20,11 L22,11" stroke-opacity="0.3"></path>
+                        <path d="M3.22,18.78 L4.64,17.36" stroke-opacity="0.3"></path>
+                        <path d="M17.36,4.64 L18.78,3.22" stroke-opacity="0.3"></path>
+                    </svg>
+
+
+                    <div class="caption">
+                        <h4>LIFX Mini Day & Dusk A60 E27</h4>
+                        <p>Включится в 17:00</p>
+                    </div>
+
+                </div>
+                <div class="device">
+                    <svg width="50" height="50" class="bulb_power_on" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <circle id="Oval" stroke-opacity="0.7" cx="11" cy="11" r="5" fill="none"></circle>
+                        <path d="M11,0 L11,2" stroke-opacity="0.3"></path>
+                        <path d="M11,20 L11,22" stroke-opacity="0.3"></path>
+                        <path d="M3.22,3.22 L4.64,4.64" stroke-opacity="0.3"></path>
+                        <path d="M17.36,17.36 L18.78,18.78" stroke-opacity="0.3"></path>
+                        <path d="M0,11 L2,11" stroke-opacity="0.3"></path>
+                        <path d="M20,11 L22,11" stroke-opacity="0.3"></path>
+                        <path d="M3.22,18.78 L4.64,17.36" stroke-opacity="0.3"></path>
+                        <path d="M17.36,4.64 L18.78,3.22" stroke-opacity="0.3"></path>
+                    </svg>
+
+
+                    <div class="caption">
+                        <h4>Xiaomi Mi Air Purifier 2S</h4>
+                        <p>Включено</p>
+                    </div>
+
+                </div>
+                <div class="device">
+                    <svg width="50" height="50" class="bulb_power_off" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <circle id="Oval" stroke-opacity="0.7" cx="11" cy="11" r="5" fill="none"></circle>
+                        <path d="M11,0 L11,2" stroke-opacity="0.3"></path>
+                        <path d="M11,20 L11,22" stroke-opacity="0.3"></path>
+                        <path d="M3.22,3.22 L4.64,4.64" stroke-opacity="0.3"></path>
+                        <path d="M17.36,17.36 L18.78,18.78" stroke-opacity="0.3"></path>
+                        <path d="M0,11 L2,11" stroke-opacity="0.3"></path>
+                        <path d="M20,11 L22,11" stroke-opacity="0.3"></path>
+                        <path d="M3.22,18.78 L4.64,17.36" stroke-opacity="0.3"></path>
+                        <path d="M17.36,4.64 L18.78,3.22" stroke-opacity="0.3"></path>
+                    </svg>
+
+
+                    <div class="caption">
+                        <h4>Philips Zhirui</h4>
+                        <p>Выключено</p>
+                    </div>
+
+                </div>
+                <div class="device">
+                    <svg width="50" height="50" class="bulb_power_off" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <circle id="Oval" stroke-opacity="0.7" cx="11" cy="11" r="5" fill="none"></circle>
+                        <path d="M11,0 L11,2" stroke-opacity="0.3"></path>
+                        <path d="M11,20 L11,22" stroke-opacity="0.3"></path>
+                        <path d="M3.22,3.22 L4.64,4.64" stroke-opacity="0.3"></path>
+                        <path d="M17.36,17.36 L18.78,18.78" stroke-opacity="0.3"></path>
+                        <path d="M0,11 L2,11" stroke-opacity="0.3"></path>
+                        <path d="M20,11 L22,11" stroke-opacity="0.3"></path>
+                        <path d="M3.22,18.78 L4.64,17.36" stroke-opacity="0.3"></path>
+                        <path d="M17.36,4.64 L18.78,3.22" stroke-opacity="0.3"></path>
+                    </svg>
+
+
+                    <div class="caption">
+                        <h4>Xiaomi Yeelight LED Smart Bulb</h4>
+                        <p>Включено</p>
+                    </div>
+
+                </div>
+                <div class="device">
+                    <svg width="50" height="50" class="bulb_power_off" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <circle id="Oval" stroke-opacity="0.7" cx="11" cy="11" r="5" fill="none"></circle>
+                        <path d="M11,0 L11,2" stroke-opacity="0.3"></path>
+                        <path d="M11,20 L11,22" stroke-opacity="0.3"></path>
+                        <path d="M3.22,3.22 L4.64,4.64" stroke-opacity="0.3"></path>
+                        <path d="M17.36,17.36 L18.78,18.78" stroke-opacity="0.3"></path>
+                        <path d="M0,11 L2,11" stroke-opacity="0.3"></path>
+                        <path d="M20,11 L22,11" stroke-opacity="0.3"></path>
+                        <path d="M3.22,18.78 L4.64,17.36" stroke-opacity="0.3"></path>
+                        <path d="M17.36,4.64 L18.78,3.22" stroke-opacity="0.3"></path>
+                    </svg>
+
+
+                    <div class="caption">
+                        <h4>Lorem, ipsum.</h4>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul class="links">
+            <li class="footer__link"><a href="#">Помощь</a></li>
+            <li class="footer__link"><a href="#">Обратная связь</a></li>
+            <li class="footer__link"><a href="#">Разработчикам</a></li>
+            <li class="footer__link"><a href="#">Условия использования</a></li>
+        </ul>
+
+        <p class="copyright">© 2001–2017 ООО «Яндекс»</p>
+
+    </footer>
+    <ul class="m-menu-items">
+        <li><a href="#" class="close-menu">&times</a></li>
+        <li class="m-menu-item"><a href="#" class="active">Сводка</a></li>
+        <li class="m-menu-item"><a href="#">Устройства</a></li>
+        <li class="m-menu-item"><a href="#">Сценарии</a></li>
+    </ul>
+
+    <div id="lightModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modalContent">
+            <div class="modal-content">
+                <div class="heading-modal">
+                    <div class="heading-content">
+                        <h5>Xiaomi Yeelight LED Smart Bulb</h5>
+                        <p>Включится в 17:00</p>
+                    </div>
+                    <div class="heading-icons">
+                        <img width="50" height="50" src="./assets/icon-sun.png" alt="sun" />
+                    </div>
+                </div>
+                <div class="buttons-modal">
+                    <button class="room-button on">Вручную</button>
+                    <button class="room-button">Дневной свет</button>
+                    <button class="room-button">Вечерний свет</button>
+                    <button class="room-button">Рассвет</button>
+                </div>
+
+                <div class="scale">
+                    <label for="light" class="light-top"></label>
+                    <label for="light" class="light-bottom"></label>
+                    <label id="label-light" class="slider-label isRight"></label>
+                    <input id="light" class="light" type="range" min="0" value="25" max="50">
+                </div>
+
+            </div>
+
+            <div class="modal-control">
+                <button class="control-button apply close">Применить</button>
+                <button class="control-button close">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="tempModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modalContent">
+            <div class="modal-content">
+                <div class="heading-modal">
+                    <div class="heading-content">
+                        <h5>Elgato Eve Degree Connected</h5>
+                        <p>Включено</p>
+                    </div>
+                    <div class="heading-icons">
+                        <label id="label-temp" class="thermo-temp"></label>
+                        <img width="50" height="50" src="./assets/icon_temperature_2.svg" alt="temperature" />
+
+                    </div>
+                </div>
+                <div class="buttons-modal">
+                    <button class="room-button on">Вручную</button>
+                    <button class="room-button">Холодно</button>
+                    <button class="room-button">Тепло</button>
+                    <button class="room-button">Жарко</button>
+                </div>
+
+                <div class="scale">
+                    <label for="tempSlider" class="temp-top">+30</label>
+                    <label for="tempSlider" class="temp-bottom">-10</label>
+                    <input id="tempSlider" class="temp" type="range" min="-10" value="10" max="30">
+                </div>
+            </div>
+
+            <div class="modal-control">
+                <button class="control-button apply close">Применить</button>
+                <button class="control-button close">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="floorModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modalContent">
+            <div class="modal-content">
+                <div class="heading-modal">
+                    <div class="heading-content">
+                        <h5>Xiaomi Warm Floor</h5>
+                        <p>Включено</p>
+                    </div>
+
+                    <div class="heading-icons">
+                        <label class="floor-temp"></label>
+                        <img width="50 " height="50 " src="./assets/icon_temperature_2.svg " alt="temperature " />
+
+                    </div>
+                </div>
+
+                <div class="slider-container ">
+                    <svg class="slider progress " width="220" height="220" fill="none " viewBox="0 0 220 220 ">
+                    </svg>
+                    <div class="background "></div>
+                    <label class="floor-temp-big"></label>
+                </div>
+            </div>
+
+            <div class="modal-control ">
+                <button class="control-button apply close ">Применить</button>
+                <button class="control-button close ">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="./main.js "></script>
+
+</html>

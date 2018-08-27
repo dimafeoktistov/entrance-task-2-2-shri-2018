@@ -1,0 +1,42 @@
+.progress {
+  position: relative;
+  transform: rotate(-90deg);
+}
+
+.progress__meter,
+.progress__value {
+  fill: none;
+}
+
+.progress__meter {
+  stroke: white;
+  stroke-dasharray: 1 2;
+}
+
+.progress__dashes {
+  stroke: #858585;
+  stroke-dasharray: 1 2;
+  stroke-dashoffset: 4;
+}
+
+.background {
+  background: url("../assets/background.svg") no-repeat;
+  height: 186px;
+  width: 186px;
+  position: absolute;
+  z-index: 124;
+  top: 9%;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.dial {
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  position: absolute;
+}

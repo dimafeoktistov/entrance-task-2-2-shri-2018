@@ -1,0 +1,226 @@
+@mixin track() {
+    height: 60px;
+    background-image: linear-gradient(to right, #068fff, #ffd800, #f76b1c);
+    box-sizing: border-box;
+    border: none;
+    border-radius: 30px;
+}
+
+@mixin trackLight() {
+    height: 60px;
+    background-image: linear-gradient(to right, #ffe682, #ff9e00);
+    box-sizing: border-box;
+    border: none;
+    border-radius: 30px;
+}
+
+@mixin thumb() {
+    cursor: pointer;
+    z-index: 5;
+    margin: 0;
+    box-sizing: border-box;
+    border: 4px solid #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: inset 0 0 0 3px rgba(#333333, 0.1);
+}
+
+[type="range"] {
+    &,
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+    }
+    &:focus {
+        outline: none;
+    }
+    width: 255px;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    background: transparent;
+    font: inherit;
+    transform: rotate(270deg);
+    margin-top: 90px;
+    margin-left: 20px;
+    @media (min-width: 635px) {
+        width: 580px;
+        transform: none;
+        margin: 0;
+    }
+}
+
+[type="range"].temp {
+    &::-webkit-slider-runnable-track {
+        @include track;
+    }
+    &::-moz-range-track {
+        @include track;
+    }
+    &::-ms-track {
+        @include track;
+    }
+    &::-webkit-slider-thumb {
+        margin-top: 0.5 * (0.25em - 1.5em);
+        @include thumb;
+    }
+    &::-moz-range-thumb {
+        @include thumb;
+    }
+    &::-ms-thumb {
+        margin-top: 0;
+        @include thumb;
+    }
+    &::-ms-tooltip {
+        display: none;
+    }
+}
+
+[type="range"].light {
+    &::-webkit-slider-runnable-track {
+        @include trackLight;
+    }
+    &::-moz-range-track {
+        @include trackLight;
+    }
+    &::-ms-track {
+        @include trackLight;
+    }
+    &::-webkit-slider-thumb {
+        margin-top: 0.5 * (0.25em - 1.5em);
+        @include thumb;
+    }
+    &::-moz-range-thumb {
+        @include thumb;
+    }
+    &::-ms-thumb {
+        margin-top: 0;
+        @include thumb;
+    }
+    &::-ms-tooltip {
+        display: none;
+    }
+}
+
+.scale {
+    width: 580px;
+    position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.slider-label {
+    position: absolute;
+    top: 19px;
+    font-size: 25px;
+    color: white;
+    pointer-events: none;
+    cursor: pointer;
+    &.isRight {
+        right: auto;
+        left: 50%;
+        transform: translateX(-280px);
+    }
+    &.isLeft {
+        right: 50%;
+        left: auto;
+        transform: translate(275px);
+    }
+    &.small-sun {
+        top: 10px;
+        width: 40px;
+        height: 40px;
+        background: url("../assets/icon_sun_min.png") center no-repeat;
+    }
+    &.big-sun {
+        top: 10px;
+        width: 40px;
+        height: 40px;
+        background: url("../assets/icon_sun_max.png") center no-repeat;
+    }
+}
+
+.thermo-temp {
+    font-size: 36px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.floor-temp {
+    font-size: 36px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.floor-temp-big {
+    position: absolute;
+    font-size: 66px;
+    color: #333333;
+    font-weight: bold;
+    z-index: 125;
+    top: 35%;
+}
+
+.temp-top {
+    position: absolute;
+    top: 15px;
+    left: 134px;
+    font-size: 18px;
+    color: #ffffff;
+    pointer-events: none;
+    cursor: pointer;
+    z-index: 3;
+    &.small-sun {
+        width: 40px;
+        height: 40px;
+        background: url("../assets/icon_sun_min.png") center no-repeat;
+    }
+    @media (min-width: 635px) {
+        display: none;
+    }
+}
+
+.temp-bottom {
+    z-index: 3;
+    position: absolute;
+    top: 215px;
+    left: 134px;
+    font-size: 18px;
+    color: #ffffff;
+    pointer-events: none;
+    cursor: pointer;
+    @media (min-width: 635px) {
+        display: none;
+    }
+}
+
+.light-top {
+    position: absolute;
+    top: 5px;
+    left: 129px;
+    pointer-events: none;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    background: url("../assets/icon_sun_max.png") center no-repeat;
+    @media (min-width: 635px) {
+        display: none;
+    }
+}
+
+.light-bottom {
+    position: absolute;
+    top: 200px;
+    left: 129px;
+    pointer-events: none;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    background: url("../assets/icon_sun_min.png") center no-repeat;
+    @media (min-width: 635px) {
+        display: none;
+    }
+}

@@ -1,0 +1,68 @@
+.faivorite-devices {
+    width: 100%;
+    .heading {
+        padding: 20px 0;
+    }
+    .devices {
+        padding: 0;
+    }
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+.m-select {
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #ffd93e;
+    border: 0;
+    font-size: 13px;
+    color: #000000;
+    text-align-last: center; // для Хром
+    text-align: center; // для FF
+    appearance: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+.select-container {
+    position: relative;
+    @media (min-width: 769px) {
+        display: none;
+    }
+}
+
+.select-side {
+    pointer-events: none;
+    width: 15px;
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+
+.buttons {
+    margin-left: 20px;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.room-button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background: #f7f7f7;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 5px;
+    width: auto;
+}
+
+.on {
+    background-color: #ffd93e;
+}
